@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parthivi - Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(232, 146, 146);
+        }
+        .navbar-custom {
+            background-color: rgb(94, 44, 44);
+        }
+        .firstSection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .leftSection {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        .rightSection {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        .rightSection img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                margin-right: 0;
+            }
+            .nav-item {
+                margin-right: 20px;
+            }
+            .firstSection {
+                flex-direction: column;
+            }
+            .leftSection, .rightSection {
+                margin: 20px 0;
+            }
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            padding: 20px; 
+        }
+        .box {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px; 
+            padding: 20px; 
+            background-color: #f0f0f0; 
+            text-align: center; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                flex: 1 1 100%; 
+            }
+        }
+
+        .custom-footer {
+            background-color: rgb(92, 36, 36);
+            color: white;
+        }
+        .custom-footer-container {
+            background-color: rgb(92, 36, 36);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .custom-footer-bottom {
+            background-color: rgb(232, 146, 146);
+            color: white;
+        }
+        .custom-footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .custom-footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .custom-footer .row {
+                text-align: center;
+            }
+        }
+        .text-container {
+            padding-left: 85px; 
+        }
+        @media (max-width: 1200px) {
+            .text-container {
+                padding-left: 60px; 
+            }
+        }
+        @media (max-width: 768px) {
+            .text-container {
+                padding-left: 30px; 
+            }
+        }
+        @media (max-width: 480px) {
+            .text-container {
+                padding-left: 15px;
+            }
+            .text-gray {
+                font-size: 14px; 
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: rgb(92, 36, 36);
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        .card-container:hover{
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html" style="color: white; font-weight: 700; font-size: 25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parthivi's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="margin-right: 70px;">
+                    <li class="nav-item" style="margin-right: 70px;">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 70px;">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 70px;">
+                        <a class="nav-link" href="./contactform.html">Contact Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple"><b>Parthivi</b></span>
+            <div>and I am a </div>
+            <span id="element"></span>
+            <div class="button">
+                <a href="./Parthivi Resume.pdf" download="Resume">
+                    <button class="btn btn-primary mt-3" onclick="changeButtonColor(this)">Download Resume</button>
+                </a>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="./abc1.jpg" alt="Parthivi's Picture">
+        </div>
+    </section>
+
+    <div class="text-container">
+        <span class="text-gray">What I Know so Far</span>
+        <h2><b>Skills</b></h2>
+    </div>
+    <div class="container">
+        <div class="box" style="background-color:rgb(92, 36, 36); color:white">
+            <h5><b>Programming Language</b></h5>
+            <br>
+            <p>C</p>
+            <p>C++</p>
+            <p>Python</p>
+            <p>Java</p>
+            <p>Javascript</p>
+        </div>
+        <div class="box" style="background-color:rgb(128, 58, 58); color:white">
+            <h5><b>Web Development</b></h5>
+            <br>
+            <p>Proficient in crafting responsive and visually appealing user interfaces using HTML, CSS, and JavaScript. And in using front-end frameworks like Bootstrap. Skilled in applying modern design principles and techniques to create intuitive and user-friendly web interfaces.</p>
+        </div>
+        <div class="box" style="background-color:rgb(187, 89, 89); color:white">
+            <h5><b>Database Management</b></h5>
+            <br>
+            <p>Proficient in designing, implementing, and maintaining relational database systems using SQL, NoSQL and MongoDB technologies.</p>
+        </div>
+        <div class="box" style="background-color:rgb(219, 100, 100); color:white">
+            <h5><b>Data Science</b></h5>
+            <br>
+            <p>Skilled in data visualization libraries such as Matplotlib, Seaborn, and Plotly to create compelling visualizations that communicate key findings effectively. Experienced in using statistical programming language like Python for conducting statistical analyses and deriving meaningful insights. </p>
+        </div>
+        <div class="box" style="background-color:rgb(128, 58, 58); color:white">
+            <h5><b>Cloud Computing</b></h5>
+            <br>
+            <p>Familiarity with cloud computing principles, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Proficiency in using cloud platforms such as Google Cloud Platform(GCP).</p>
+        </div>
+        <div class="box" style="background-color:rgb(92, 36, 36);; color:white">
+            <h5><b>Google Cloud Platform Services</b></h5>
+            <br>
+            <p>Proficiency in using various GCP services such as Compute Engine, App Engine, Kubernetes Engine, Cloud Storage, BigQuery, Dataflow, Pub/Sub, and Firestore. Experience with deploying, managing, and scaling applications and services on GCP infrastructure.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <h5 style="padding: 25px; font-size: 3rem;"><center><b>Projects</b></center></h5><br><br><br><br>
+    <div class="card-container">
+        <div class="card">
+            <h3 style="color:white">Ecommerce Website</h3><br>
+            <img src="./abc3.png" alt="Alps" style="width:100%; padding:0 325;">
+            <p style="color:white">Built an ecommerce website(Ecstatic Cakes) selling homemade baked items, developed using Python Django for robust functionality and seamless user experience.</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="card-container">
+        <div class="card">
+            <h3 style="color:white">Chat Bot</h3><br>
+            <img src="./abc2.png" alt="Alps" style="width:100%; padding:0 325;">
+            <p style="color:white">Developed a Python based chatbot using machine learning techniques.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="card-container">
+        <div class="card">
+            <h3 style="color:white">Portfolio Website</h3><br>
+            <img src="./abc4.png" alt="Alps" style="width:100%; padding:0 325;">
+            <p style="color:white">Crafted a portfolio website using HTML, CSS, and JavaScript to showcase skills, projects, internships and certificates.</p>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <footer class="custom-footer pt-4">
+        <div class="custom-footer-container">
+            <div class="row">
+                <div class="col-md-4" style="text-align: center;">
+                    <h5><b>Contact</b></h5>
+                    <br>
+                    <p><b>Email :</b> parthiviss06@gmail.com</p>
+                    <p><b>Phone No :</b> 9359776392</p>
+                    <p><b>Address :</b> Pune</p>
+                </div>
+                <br>
+    
+                <div class="col-md-4" style="text-align: center;">
+                    <h5><b>Quick Links</b></h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-white">Home</a></li>
+                        <li><a href="./about.html" class="text-white">About</a></li>
+                        <li><a href="./contactform.html" class="text-white">Contact Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4" style="text-align: center;">
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="https://www.linkedin.com/in/parthivi-suryavanshi-17b900251/" class="text-white">LinkedIn</a></li>
+                        <li><a href="https://github.com/ParthiviSuryavanshi/Github" class="text-white">GitHub</a></li>
+                        <li><a href="https://www.codechef.com/users/parthivi_06" class="text-white">CodeChef</a></li>
+                        <li><a href="https://leetcode.com/u/5O91BPzzCu/" class="text-white">LeetCode</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="custom-footer-bottom text-center py-3">
+            <p class="mb-0">© 2024 Parthivi's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['IT Engineer Student', 'Fresher', 'Intern'],
+            typeSpeed: 70,
+        });
+
+        function changeButtonColor(button) {
+            button.classList.add('button-clicked');
+        }
+    </script>
+
+</body>
+</html>

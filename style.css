@@ -1,0 +1,59 @@
+
+body{
+    background-color: rgb(232, 146, 146);
+}
+.navbar-custom {
+    background-color: rgb(92, 36, 36);
+}
+.button-clicked {
+    background-color: white;
+    color: black;
+}
+.navbar-custom .nav-link {
+    color: rgb(232, 146, 146); 
+    font-weight: 800;
+    font-size: 15;
+}
+.navbar-custom .nav-link:hover {
+    color: white;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 2.1rem;
+}
+.leftSection .button{
+    padding: 40px 0;
+}
+.leftSection .btn{
+    padding: 9px;
+    background: rgb(94, 44, 44);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.rightSection img{
+    margin: 2.5rem 0;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+}
+.purple{
+    color: rgb(92, 36, 36);
+}
+.text-gray{
+    color: grey;
+}
+#element{
+    color: rgb(92, 36, 36);
+}
+
